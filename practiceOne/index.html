@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+    <header class="Header">
+        <div class="container">
+            <img src="images/craig-mckay-jmURdhtm7Ng-unsplash.jpg" alt="avatar" class="Header-avatar logo">
+            
+            <div class="Header-sidebar">
+
+                    <h2 class="Header-sidebar-logo">Sencer Giray</h2>
+
+
+                <ul class="Header-sidebar-items">
+                    <h3>profile</h3>
+                    <li>
+                        <i class='bx bx-home-circle'></i>
+                        Home
+                    </li>
+                    <li>
+                        <i class='bx bx-user'></i>
+                        Profile
+                        <i class='bx bx-chevron-down'></i>
+                    </li>
+                    <li>
+                        <i class='bx bx-message-rounded' ></i>
+                        Messages
+                    </li>
+                </ul>
+
+                <ul class="Header-sidebar-items">
+                    <h3>Menu</h3>
+                    <li>
+                        <i class='bx bxs-bell-plus' ></i>
+                        Notifications
+                        <i class='bx bx-chevron-down' ></i>
+                    </li>
+                    <li>
+                        <i class='bx bx-circle'></i>
+                        Explore
+                    </li>
+                    <li>
+                        <i class='bx bx-bookmark'></i>
+                        Saved
+                    </li>
+                </ul>
+            </div>
+
+            <div class="Header-search">
+                <input type="text" class="Header-search-input">
+                <i class='bx bx-search'></i>
+            </div>
+
+            <div class="Header-toggle btn">
+                <span class="Header-toggle-line line"></span>
+                <span class="Header-toggle-line line"></span>
+                <span class="Header-toggle-line line"></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="Main-section">
+       <div class="container">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, repellat ab illum exercitationem neque explicabo velit facilis animi rerum tempore deserunt, possimus at enim, nesciunt repellendus asperiores sapiente veniam quae.
+           <br><br>
+           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque qui consequuntur dolorum dolorem dolor quasi libero voluptates asperiores, assumenda, magni deserunt amet est fugiat eos aliquam eaque voluptas repellat esse.
+           Cumque perspiciatis aliquam nobis tenetur optio unde consectetur voluptate nulla reiciendis! Deleniti esse eveniet quaerat atque alias magnam doloribus, minus consectetur consequuntur non quisquam ipsa similique a architecto nobis ipsam.
+           Consequatur illum quod corrupti obcaecati blanditiis perferendis illo aliquam voluptatem quisquam dolorem doloribus animi, id, error enim rerum quos libero nobis eius. Ad et maiores id temporibus expedita doloremque laudantium!
+           Dolores at optio impedit repellat? Molestiae quo velit ipsam ad, obcaecati vitae rerum quae minima rem repudiandae laboriosam saepe? Nisi ullam dolore molestiae quos, deleniti similique sapiente tenetur reiciendis ab!
+           Ratione aperiam voluptas explicabo quasi velit. Alias voluptate id nihil, magni harum repudiandae possimus! Quas, nobis placeat! Dolor recusandae ad tempora similique itaque nostrum, aliquid veritatis! Ab nam quis beatae!
+       </div>
+    </section>
+
+    <script>
+        const btn = document.querySelector('.btn')
+        const sidebar = document.querySelector('.Header-sidebar')
+        btn.addEventListener('click', () => {
+            sidebar.classList.toggle('showmenu')
+        })
+    </script>
+</body>
+</html>
