@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0;
+}
+
+body {
+  font-family: 'Poppins';
+  font-size: 16px;
+  background: #fff;
+  color: #000;
+}
+
+body li {
+  list-style: none;
+}
+
+body a {
+  color: #262626;
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn {
+  cursor: pointer;
+  background: #262626;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+}
+
+.btn i {
+  margin-left: 5px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.Header {
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.Header-logo img {
+  width: 120px;
+  height: auto;
+}
+
+.Header-menu {
+  margin-left: 20px;
+}
+
+.Header-menu li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.Header-menu li a {
+  padding-bottom: 2px;
+}
+
+.Header-menu li a:hover {
+  border-bottom: 2px solid #262626;
+}
+
+.Header-icons {
+  margin-left: auto;
+}
+
+.Header-icons li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.Header-btn {
+  margin-left: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.Header-btn span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #262626;
+}
+
+.Header-btn span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+ul.Header-menu.flex.show {
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+}
+
+.Banner {
+  width: 100%;
+  height: 400px;
+  background: url("../img/slide1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+.Banner p {
+  margin: 8px 0 20px 0;
+}
+
+.Cards {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.Cards-card img {
+  width: 100%;
+}
+
+.Cards-card h3 {
+  margin: 20px 0 10px 0;
+  font-weight: bold;
+}
+
+.Cards-card p {
+  font-size: 14px;
+}
+
+.Cards-card a {
+  display: inline-block;
+  padding-top: 10px;
+  color: #4b4bb3;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.Cards-card a i {
+  -webkit-transition: 300ms margin-left ease-in-out;
+  transition: 300ms margin-left ease-in-out;
+}
+
+.Cards-card a:hover i {
+  margin-left: 10px;
+}
+
+.Xbox {
+  margin: 50px 0;
+  width: 100%;
+  height: 350px;
+  background: url("../img/xbox.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Xbox-content {
+  width: 40%;
+  padding: 50px 0 0 30px;
+}
+
+.Xbox-content p {
+  margin: 10px 0 20px 0;
+}
+
+.Carbon {
+  margin: 50px 0;
+  width: 100%;
+  height: 350px;
+  background: url("../img/carbon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Carbon-content {
+  color: #fff;
+  width: 40%;
+  padding: 50px 0 0 30px;
+}
+
+.Carbon-content p {
+  margin: 10px 0 20px 0;
+}
+
+.Carbon-content .btn {
+  background-color: #fff;
+  color: #262626;
+}
+
+.Social {
+  margin-bottom: 50px;
+}
+
+.Social ul li a img {
+  width: 30px;
+  height: 30px;
+}
+
+.Social ul li:not(:first-child) {
+  margin-left: 10px;
+}
+
+.Links {
+  background: #f3f3f3;
+  padding: 30px 0;
+}
+
+.Links .container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+.Links .container ul li {
+  line-height: 2.3;
+}
+
+.Links .container ul li h3 {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.Links .container ul li a {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-transition: 400ms all;
+  transition: 400ms all;
+  border-bottom: 1px solid transparent;
+}
+
+.Links .container ul li a:hover {
+  color: #262626;
+  border-bottom: 1px solid #262626;
+}
+
+.Footer {
+  background: #f3f3f3;
+  padding: 50px 0;
+}
+
+.Footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Footer a i {
+  margin-right: 10px;
+}
+
+@media (max-width: 700px) {
+  .Header-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+    background: rgba(243, 243, 243, 0.9);
+    height: 100vh;
+    padding-top: 50px;
+    -webkit-transition: 300ms -webkit-transform ease-in-out;
+    transition: 300ms -webkit-transform ease-in-out;
+    transition: 300ms transform ease-in-out;
+    transition: 300ms transform ease-in-out, 300ms -webkit-transform ease-in-out;
+  }
+  .Header-menu li {
+    line-height: 2.3;
+    padding: 5px 8px;
+    margin-left: 20px;
+  }
+  .Header-menu li:not(:last-child) {
+    border-bottom: 1px solid rgba(38, 38, 38, 0.2);
+  }
+  .Header-menu li:last-child {
+    margin-right: 20px;
+  }
+  .Header-menu li a {
+    font-size: 14px;
+    opacity: .8;
+  }
+  .Header-btn {
+    display: block;
+  }
+  .Banner p {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .Cards {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .Xbox-content h2 {
+    margin-bottom: 20px;
+  }
+  .Xbox-content p {
+    display: none;
+  }
+  .Carbon-content {
+    width: 90%;
+  }
+  .Links .container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .Header-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+    background: rgba(243, 243, 243, 0.9);
+    height: 100vh;
+    padding-top: 50px;
+    -webkit-transition: 300ms -webkit-transform ease-in-out;
+    transition: 300ms -webkit-transform ease-in-out;
+    transition: 300ms transform ease-in-out;
+    transition: 300ms transform ease-in-out, 300ms -webkit-transform ease-in-out;
+  }
+  .Header-menu li {
+    line-height: 2.3;
+    padding: 5px 8px;
+    margin-left: 20px;
+  }
+  .Header-menu li:not(:last-child) {
+    border-bottom: 1px solid rgba(38, 38, 38, 0.2);
+  }
+  .Header-menu li:last-child {
+    margin-right: 20px;
+  }
+  .Header-menu li a {
+    font-size: 14px;
+    opacity: .8;
+  }
+  .Banner p {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .Cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .Xbox-content {
+    width: 90%;
+  }
+  .Links .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .Links .container ul {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
